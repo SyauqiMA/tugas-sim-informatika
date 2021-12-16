@@ -22,12 +22,12 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-4">
                                 <div class="product-pic-zoom">
                                     <img class="product-big-img" src="img/products/mie.jpg" alt="" />
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-8">
                                 <div class="product-details text-left">
                                     <div class="pd-title">
                                         <span>Mie Instan</span>
@@ -41,6 +41,13 @@
                                         <h4>Rp 2.300</h4>
                                     </div>
                                     <div class="quantity">
+                                        <div class="pro-qty">
+                                            <button v-on:click="current_qty == 1 ? (current_qty -= 0) : (current_qty -= 1)" class="qtybtn dec">-</button>
+
+                                            <input type="number" id="quantity" step="1" min="1" max="50" name="quantity" :value="current_qty" title="Qty" size="2" placeholder inputmode="numeric" />
+
+                                            <button v-on:click="current_qty == 50 ? (current_qty += 0) : (current_qty += 1)" class="qtybtn">+</button>
+                                        </div>
                                         <a href="shopping-cart.html" class="primary-btn pd-cart">Add to Cart</a>
                                     </div>
                                 </div>
@@ -48,6 +55,7 @@
                         </div>
                     </div>
                 </div>
+                <hr />
             </div>
         </section>
         <!-- Product Shop Section End -->
@@ -67,6 +75,11 @@ export default {
         HeaderKopma,
         FooterKopma,
         RelatedProducts,
+    },
+    data() {
+        return {
+            current_qty: 1,
+        };
     },
 };
 </script>

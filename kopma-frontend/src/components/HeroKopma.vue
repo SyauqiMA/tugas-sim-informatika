@@ -2,10 +2,10 @@
     <!-- Hero Section Begin -->
     <section class="hero-section">
         <carousel class="hero-items" :items="1" :nav="false" :autoplay="true">
-            <div class="single-hero-items set-bg" style="background-image: url('/img/hero-promo-1.png')">
+            <div class="single-hero-items set-bg" style="background-image: url('/img/hero-promo-1.png'); background-size: cover">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-5">
+                        <div class="ml-5 col-lg-5">
                             <!-- <span>Bag,kids</span> -->
                             <h1>Promo Setiap Hari</h1>
                             <p>
