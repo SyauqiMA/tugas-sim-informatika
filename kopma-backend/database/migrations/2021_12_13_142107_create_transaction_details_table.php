@@ -14,12 +14,10 @@ class CreateTransactionDetailsTable extends Migration
     public function up()
     {
         Schema::create('transaction_details', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->integer('transactions_id');
-            $table->integer('products_id');
-            
-            $table->softDeletes();
-            $table->timestamps();
+            $table->id();
+            $table->foreignId('transactions_id')->constrained('transactions')->restrictOnDelete();
+            $table->foreignId('products_id')->constrained('products')->restrictOnDelete();
+            $table->integer('qty');            
         });
     }
 
