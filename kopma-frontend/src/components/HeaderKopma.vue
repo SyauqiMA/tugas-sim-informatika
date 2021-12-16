@@ -1,26 +1,14 @@
 <template>
     <!-- Header Section Begin -->
     <header class="header-section">
-        <!-- <div class="header-top">
-            <div class="container">
-                <div class="ht-left">
-                    <div class="mail-service">
-                        <i class=" fa fa-envelope"></i> hello.shayna@gmail.com
-                    </div>
-                    <div class="phone-service">
-                        <i class=" fa fa-phone"></i> +628 22081996
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <div class="container">
             <div class="inner-header">
                 <div class="row">
                     <div class="col-lg-2 col-md-2">
                         <div class="logo">
-                            <a href="./index.html">
+                            <router-link to="/">
                                 <img src="img/logo_kopma.png" alt="" />
-                            </a>
+                            </router-link>
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-7"></div>
