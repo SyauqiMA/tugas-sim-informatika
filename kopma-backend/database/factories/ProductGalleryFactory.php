@@ -15,7 +15,7 @@ class ProductGalleryFactory extends Factory
     {
         return [
             'products_id' => $this->faker->numberBetween(1, 20),
-            'image' => $this->faker->imageUrl(300, 300)
+            'photo' => $this->faker->imageUrl(300, 300)
         ];
     }
 }

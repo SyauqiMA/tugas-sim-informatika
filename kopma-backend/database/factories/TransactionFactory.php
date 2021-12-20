@@ -15,7 +15,7 @@ class TransactionFactory extends Factory
     {
         return [
             'uuid' => $this->faker->uuid(),
-            'user_id' => $this->faker->numberBetween(0, 11),
+            'user_id' => $this->faker->numberBetween(1, 11),
             'transaction_status' => 'success'
         ];
     }
