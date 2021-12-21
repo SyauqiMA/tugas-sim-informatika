@@ -14,14 +14,10 @@ class CreateTransactionsTable extends Migration
     public function up()
     {
         Schema::create('transactions', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('uuid');
-            $table->string('name');
-            $table->string('email');
-            $table->string('number');
-            $table->string('address');
-            $table->integer('transaction_total');
-            $table->string('transaction_status');
+            $table->id();
+            $table->string('uuid')->unique();
+            $table->foreignId('user_id')->constrained('users')->restrictOnDelete();
+            $table->enum('transaction_status', ['success', 'pending']);
 
             $table->softDeletes();
             $table->timestamps();
