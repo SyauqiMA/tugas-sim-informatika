@@ -11,7 +11,17 @@
                             </router-link>
                         </div>
                     </div>
-                    <div class="col-lg-7 col-md-7"></div>
+                    <div class="col-lg-7 col-md-7">
+                        <div class="advanced-search">
+                            <button type="button" class="category-btn">Kategori</button>
+                            <div class="input-group">
+                                <input type="text" placeholder="Beli apa hari ini?" />
+                                <button type="button" id="searchBtn" aria-label="Cari" title="Cari Produk">
+                                    <i class="ti-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-3 text-right col-md-3">
                         <ul class="nav-right">
                             <li class="cart-icon">

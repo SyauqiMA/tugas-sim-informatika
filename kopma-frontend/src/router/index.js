@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import Product from "../views/Product.vue";
 import ShoppingCart from "../views/ShoppingCart.vue";
 import SuccessPage from "../views/Success.vue";
+import ProductSearch from "../views/ProductSearch.vue";
 
 Vue.use(VueRouter);
 
@@ -35,6 +36,11 @@ const routes = [
         path: "/success",
         name: "SuccessPage",
         component: SuccessPage,
+    },
+    {
+        path: "/productsearch",
+        name: "ProductSearch",
+        component: ProductSearch,
     },
 ];
 

@@ -417,8 +417,11 @@ ol {
 }
 
 .inner-header .advanced-search {
+    display: flex;
     height: 50px;
     border: 1px solid #ebebeb;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .inner-header .advanced-search .category-btn {
@@ -456,7 +459,9 @@ ol {
 }
 
 .inner-header .advanced-search .input-group {
-    max-width: 70%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
     height: 100%;
 }
 
@@ -3920,7 +3925,7 @@ input[type="number"] {
 
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
     .inner-header .advanced-search .input-group button {
-        right: -14px;
+        /* right: -14px; */
     }
     .product-item .pi-pic ul li a {
         padding: 16px 12px 12px 11px;
@@ -3943,7 +3948,7 @@ input[type="number"] {
         max-width: 36%;
     }
     .inner-header .advanced-search .input-group {
-        max-width: 64%;
+        /* max-width: 64%; */
     }
     .nav-item .nav-menu li a {
         padding: 16px 26px 15px;
@@ -4025,7 +4030,7 @@ input[type="number"] {
         padding-top: 30px;
     }
     .inner-header .advanced-search .input-group button {
-        right: -8px;
+        /* right: -8px; */
     }
 }
 
@@ -4052,7 +4057,7 @@ input[type="number"] {
         padding-right: 25px;
     }
     .inner-header .advanced-search .input-group {
-        max-width: 60%;
+        /* max-width: 60%; */
     }
     .inner-header .nav-right li {
         margin-left: 8px;
