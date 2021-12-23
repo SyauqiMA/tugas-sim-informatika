@@ -1,20 +1,27 @@
 <template>
     <div class="productsearch">
         <HeaderKopma />
+        <!-- Breadcrumb Section Begin -->
+        <div class="breacrumb-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-left">
+                        <div class="breadcrumb-text product-more">
+                            <router-link to="/"><i class="fa fa-home"></i> Home</router-link>
+                            <span>Pencarian Produk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Breadcrumb Section Begin -->
         <section class="product-shop spad">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1 produts-sidebar-filter text-left">
-                        <div class="filter-widget">
-                            <h4 class="fw-title">Kategori</h4>
-                            <ul class="filter-catagories">
-                                <li><a href="">Makanan</a></li>
-                                <li><a href="">Minuman</a></li>
-                                <li><a href="">Kecantikan</a></li>
-                            </ul>
+                    <div class="col-lg-12 order-1 order-lg-2">
+                        <div class="mt-4 mb-4 text-left">
+                            <h4>Keranjang Belanja</h4>
                         </div>
-                    </div>
-                    <div class="col-lg-9 order-1 order-lg-2">
                         <div class="product-list">
                             <div class="row">
                                 <div class="col-lg-3 col-sm-4">
