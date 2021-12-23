@@ -1,6 +1,6 @@
 <template>
     <div class="shoppingCart">
-        <HeaderKopma />
+        <HeaderKopmaCart />
         <!-- Breadcrumb Section Begin -->
         <div class="breacrumb-section">
             <div class="container">
@@ -92,13 +92,13 @@
 </template>
 
 <script>
-import HeaderKopma from "@/components/HeaderKopma.vue";
+import HeaderKopmaCart from "@/components/HeaderKopmaCart.vue";
 import FooterKopma from "@/components/FooterKopma.vue";
 
 export default {
     name: "ShoppingCart",
     components: {
-        HeaderKopma,
+        HeaderKopmaCart,
         FooterKopma,
     },
 };

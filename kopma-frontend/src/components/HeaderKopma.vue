@@ -25,7 +25,6 @@
                     <div class="col-lg-3 text-right col-md-3">
                         <ul class="nav-right">
                             <li class="cart-icon">
-                                Keranjang Belanja &nbsp;
                                 <a href="#">
                                     <i class="icon_bag_alt"></i>
                                     <span>2</span>
@@ -72,6 +71,12 @@
                                     <div class="select-button">
                                         <a href="shopping-cart.html" class="primary-btn checkout-btn">CHECK OUT</a>
                                     </div>
+                                </div>
+                            </li>
+                            <li class="profile-nav">
+                                <div class="profile">
+                                    <img src="img/profile.png" alt="Gambar Profile" class="profile-pic" />
+                                    <span>Ramadhan</span>
                                 </div>
                             </li>
                         </ul>
