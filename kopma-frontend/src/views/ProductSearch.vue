@@ -19,8 +19,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 order-1 order-lg-2">
-                        <div class="mt-4 mb-4 text-left">
-                            <h4>Keranjang Belanja</h4>
+                        <div class="title-search mt-4 mb-4">
+                            <div class="row">
+                                <div class="text-left col-lg-6 col-sm-12">
+                                    <h4>Hasil Pencarian | <span>Daily Stuff</span></h4>
+                                </div>
+                                <div class="text-right col-lg-6 col-sm-12">
+                                    <h6>12 Produk ditemukan</h6>
+                                </div>
+                            </div>
                         </div>
                         <div class="product-list">
                             <div class="row">
