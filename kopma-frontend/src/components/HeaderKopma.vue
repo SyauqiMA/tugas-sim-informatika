@@ -78,6 +78,15 @@
                                     <img src="img/profile.png" alt="Gambar Profile" class="profile-pic" />
                                     <span>Ramadhan</span>
                                 </div>
+                                <div class="profile-hover">
+                                    <div class="profile-menu">
+                                        <a href="">Profil</a>
+                                        <a href="">Pesanan Saya</a>
+                                    </div>
+                                    <div class="select-button">
+                                        <a href="" class="primary-btn logout-btn">Log Out</a>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>

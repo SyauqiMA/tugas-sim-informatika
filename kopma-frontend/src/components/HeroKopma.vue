@@ -2,7 +2,7 @@
     <!-- Hero Section Begin -->
     <section class="hero-section">
         <carousel class="hero-items" :items="1" :nav="false" :autoplay="true">
-            <div class="single-hero-items set-bg" style="background-image: url('/img/hero-promo-1.png'); background-size: cover">
+            <div class="single-hero-items set-bg" style="background-image: url('/img/hero-promo-1.png'); background-size: cover; background-repeat: no-repeat; background-position: center">
                 <div class="container">
                     <div class="row">
                         <div class="ml-5 col-lg-5">
@@ -17,7 +17,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-hero-items set-bg" style="background-image: url('/img/hero-promo-2.png')">
+            <div class="single-hero-items set-bg" style="background-image: url('/img/hero-promo-2.png'); background-size: cover; background-repeat: no-repeat; background-position: center">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5">

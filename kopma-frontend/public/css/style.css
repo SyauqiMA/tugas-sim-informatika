@@ -641,6 +641,58 @@ ol {
     margin: 0 8px 0 8px;
 }
 
+.inner-header .nav-right li.profile-nav:hover .profile-hover {
+    opacity: 1;
+    visibility: visible;
+    top: 60px;
+}
+
+.inner-header .nav-right li.profile-nav .profile-hover {
+    position: absolute;
+    right: -70px;
+    top: 100px;
+    width: 200px;
+    background: #ffffff;
+    z-index: 99;
+    text-align: left;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-box-shadow: 0 13px 32px rgba(51, 51, 51, 0.1);
+    box-shadow: 0 13px 32px rgba(51, 51, 51, 0.1);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.inner-header .nav-right li.profile-nav .profile-menu a {
+    color: #252525;
+    position: relative;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.inner-header .nav-right li.profile-nav .profile-hover .select-button .view-card {
+    font-size: 12px;
+    letter-spacing: 2px;
+    display: block;
+    text-align: center;
+    background: #191919;
+    color: #ffffff;
+    padding: 15px 30px 12px;
+    margin-bottom: 10px;
+}
+
+.inner-header .nav-right li.profile-nav .profile-hover .select-button .logout-btn {
+    font-size: 12px;
+    letter-spacing: 2px;
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    padding: 15px 30px 12px;
+}
+
 .nav-item {
     background: #252525;
     display: -webkit-box;
@@ -4204,7 +4256,7 @@ input[type="number"] {
         color: #fff;
     }
     .inner-header .nav-right li.cart-icon .cart-hover {
-        left: -50px;
+        right: -10px;
     }
     .product-show-option p {
         text-align: left;
