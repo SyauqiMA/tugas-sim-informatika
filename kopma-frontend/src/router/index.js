@@ -6,6 +6,7 @@ import ShoppingCart from "../views/ShoppingCart.vue";
 import SuccessPage from "../views/Success.vue";
 import ProductSearch from "../views/ProductSearch.vue";
 import Login from "../views/Login.vue";
+import Register from "../views/Register.vue";
 
 Vue.use(VueRouter);
 
@@ -47,6 +48,11 @@ const routes = [
         path: "/login",
         name: "Login",
         component: Login,
+    },
+    {
+        path: "/daftar",
+        name: "Register",
+        component: Register,
     },
 ];
 

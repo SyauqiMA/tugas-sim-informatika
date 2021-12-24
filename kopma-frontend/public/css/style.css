@@ -213,6 +213,7 @@ a.btn-google {
     display: inline-block;
     width: 100%;
     background-color: #4267b2;
+    border: 1px solid #4267b2;
     font-size: 16px;
     padding: 17px;
     text-align: center;
@@ -3888,6 +3889,11 @@ input[type="number"] {
     padding-bottom: 80px;
 }
 
+.register-login-section img {
+    height: 160px;
+    margin-bottom: 20px;
+}
+
 .register-form h2,
 .login-form h2 {
     color: #252525;
@@ -3945,6 +3951,7 @@ input[type="number"] {
     letter-spacing: 2px;
     margin-top: 5px;
     background: #0e8b7d;
+    border: 1px solid #0e8b7d;
 }
 
 .register-form .switch-login,
