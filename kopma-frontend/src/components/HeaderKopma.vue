@@ -13,7 +13,32 @@
                     </div>
                     <div class="col-lg-7 col-md-7">
                         <div class="advanced-search">
-                            <button type="button" class="category-btn">Kategori</button>
+                            <div class="category-menu">
+                                <button type="button" class="category-btn">Kategori</button>
+                                <div class="dropdown-category">
+                                    <div class="container mt-4 mb-5">
+                                        <h4>Kategori</h4>
+                                        <div class="row mt-4">
+                                            <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+                                                <h5 class="mb-3">Makanan dan Minuman</h5>
+                                                <a href="">Kopi</a><a href="">Mie Instan</a><a href="">Minyak Goreng</a><a href="">Roti</a><a href="">Susu</a><a href="">Yogurt</a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+                                                <h5 class="mb-3">Produk Kecantikan</h5>
+                                                <a href="">Kosmetik</a><a href="">Perawatan Badan</a><a href="">Perawatan Rambut</a><a href="">Perawatan Wajah</a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+                                                <h5 class="mb-3">Kebutuhan Rumah</h5>
+                                                <a href="">Deterjen</a><a href="">Obat Nyamuk</a><a href="">Tisu</a><a href="">Pembersih Lantai</a><a href="">Pewangi Ruangan</a><a href="">Sabun Cuci Piring</a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+                                                <h5 class="mb-3">Kesehatan</h5>
+                                                <a href="">Antiseptik dan Sanitas</a><a href="">Masker</a><a href="">Vitamin</a><a href="">Obat Luar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="input-group">
                                 <input type="text" placeholder="Beli apa hari ini?" />
                                 <button type="button" id="searchBtn" aria-label="Cari" title="Cari Produk">

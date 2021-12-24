@@ -296,150 +296,6 @@ a.btn-facebook {
   Header
 -----------------------*/
 
-.ht-right .lan-selector {
-    max-width: 142px;
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-}
-
-.ht-right .lan-selector .ddcommon {
-    max-width: 142px;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    outline: none;
-    cursor: pointer;
-    padding: 0 20px;
-}
-
-.ht-right .lan-selector .ddcommon .ddTitle .ddTitleText img {
-    padding-right: 5px;
-}
-
-.ht-right .lan-selector .ddcommon .ddTitle .ddTitleText span {
-    font-size: 14px;
-    color: #252525;
-}
-
-.ht-right .lan-selector .ddcommon .ddTitle .ddArrow:before {
-    content: "3";
-    font-family: "ElegantIcons";
-    font-size: 14px;
-    color: #636363;
-    float: right;
-    position: relative;
-    right: 0;
-    line-height: 26px;
-}
-
-.ht-right .lan-selector .ddcommon .ddChild {
-    background: #fff;
-    max-width: 142px;
-    width: 100%;
-    position: relative;
-    left: 0;
-}
-
-.ht-right .lan-selector .ddcommon .ddChild ul {
-    width: 100%;
-    max-width: 142px;
-}
-
-.ht-right .lan-selector .ddcommon .ddChild ul li {
-    line-height: 23px;
-    padding: 0px 10px;
-    list-style: none;
-}
-
-.ht-right .lan-selector .ddcommon .ddChild ul li img {
-    padding-right: 10px;
-}
-
-.ht-right .lan-selector .ddcommon .ddChild ul li span {
-    font-size: 13px;
-    color: #000;
-    letter-spacing: 0.325px;
-}
-
-.header-top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.header-top .ht-left {
-    float: left;
-}
-
-.header-top .ht-left .mail-service {
-    font-size: 16px;
-    color: #252525;
-    float: left;
-    border-right: 1px solid #e5e5e5;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 20px;
-}
-
-.header-top .ht-left .mail-service i {
-    margin-right: 5px;
-}
-
-.header-top .ht-left .phone-service {
-    float: right;
-    font-size: 14px;
-    color: #252525;
-    line-height: 27px;
-    padding-top: 15px;
-    padding-bottom: 12px;
-    padding-left: 20px;
-}
-
-.header-top .ht-left .phone-service i {
-    margin-right: 5px;
-}
-
-.header-top .ht-right {
-    float: right;
-}
-
-.header-top .ht-right .login-panel {
-    float: right;
-    font-size: 14px;
-    color: #252525;
-    display: inline-block;
-    padding-left: 20px;
-    border-left: 1px solid #e5e5e5;
-    padding-top: 18px;
-    padding-bottom: 15px;
-}
-
-.header-top .ht-right .login-panel i {
-    margin-right: 8px;
-}
-
-.header-top .ht-right .lan-selector {
-    float: right;
-    margin-top: 15px;
-    margin-bottom: 13px;
-}
-
-.header-top .ht-right .top-social {
-    float: right;
-    padding-right: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-right: 1px solid #e5e5e5;
-}
-
-.header-top .ht-right .top-social a {
-    color: #252525;
-    font-size: 14px;
-    display: inline-block;
-    margin-left: 15px;
-}
-
 .inner-header {
     padding: 39px 0;
 }
@@ -460,8 +316,7 @@ a.btn-facebook {
     justify-content: space-between;
 }
 
-.inner-header .advanced-search .category-btn {
-    max-width: 30%;
+.inner-header .advanced-search .category-menu .category-btn {
     float: left;
     background: transparent;
     border: none;
@@ -474,7 +329,7 @@ a.btn-facebook {
     position: relative;
 }
 
-.inner-header .advanced-search .category-btn:before {
+.inner-header .advanced-search .category-menu .category-btn:before {
     position: absolute;
     right: 0;
     top: 14px;
@@ -484,7 +339,7 @@ a.btn-facebook {
     content: "";
 }
 
-.inner-header .advanced-search .category-btn:after {
+.inner-header .advanced-search .category-menu .category-btn:after {
     position: absolute;
     right: 11px;
     top: 10px;
@@ -492,6 +347,44 @@ a.btn-facebook {
     font-family: "ElegantIcons";
     font-size: 16px;
     color: #b2b2b2;
+}
+
+.inner-header .advanced-search .category-menu:hover .dropdown-category {
+    opacity: 1;
+    visibility: visible;
+    top: 60px;
+}
+
+.inner-header .advanced-search .category-menu .dropdown-category {
+    position: absolute;
+    margin-left: -15%;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 100px;
+    width: 150%;
+    background: #ffffff;
+    z-index: 99;
+    text-align: left;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-box-shadow: 0 13px 32px rgba(51, 51, 51, 0.1);
+    box-shadow: 0 13px 32px rgba(51, 51, 51, 0.1);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.inner-header .advanced-search .category-menu .dropdown-category h5 {
+    font-weight: 700;
+    color: #0e8b7d;
+}
+
+.inner-header .advanced-search .category-menu .dropdown-category a {
+    display: block;
+    padding: 4px 0;
+    color: #333;
 }
 
 .inner-header .advanced-search .input-group {
@@ -707,17 +600,6 @@ a.btn-facebook {
     display: block;
     font-size: 15px;
     margin-bottom: 16px;
-}
-
-.inner-header .nav-right li.profile-nav .profile-hover .select-button .view-card {
-    font-size: 12px;
-    letter-spacing: 2px;
-    display: block;
-    text-align: center;
-    background: #191919;
-    color: #ffffff;
-    padding: 15px 30px 12px;
-    margin-bottom: 10px;
 }
 
 .inner-header .nav-right li.profile-nav .profile-hover .select-button .logout-btn {
@@ -4064,12 +3946,6 @@ input[type="number"] {
 /* Medium Device: 1200px */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .inner-header .advanced-search .category-btn {
-        max-width: 36%;
-    }
-    .inner-header .advanced-search .input-group {
-        /* max-width: 64%; */
-    }
     .nav-item .nav-menu li a {
         padding: 16px 26px 15px;
     }
@@ -4169,9 +4045,9 @@ input[type="number"] {
     .header-top .ht-right .top-social a {
         margin-left: 10px;
     }
-    .inner-header .advanced-search .category-btn {
-        max-width: 40%;
-        padding-right: 25px;
+    .inner-header .advanced-search .category-menu .category-btn {
+        padding-right: 30px;
+        padding-left: 15px;
     }
 
     .inner-header .nav-right li {
@@ -4235,9 +4111,15 @@ input[type="number"] {
         margin-top: 5px;
         margin-bottom: 5px;
     }
-    .inner-header .advanced-search .category-btn {
+    .inner-header .advanced-search .category-menu .category-btn {
         display: none;
     }
+
+    .inner-header .advanced-search .category-menu .dropdown-category {
+        margin-left: auto;
+        width: 100%;
+    }
+
     .inner-header .advanced-search .input-group {
         max-width: 100%;
     }
@@ -4386,7 +4268,7 @@ input[type="number"] {
     .instagram-photo .insta-item {
         width: 100%;
     }
-    .inner-header .advanced-search .category-btn {
+    .inner-header .advanced-search .category-menu .category-btn {
         display: none;
     }
     .inner-header .advanced-search .input-group {
