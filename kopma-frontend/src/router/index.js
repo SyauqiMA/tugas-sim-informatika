@@ -5,6 +5,7 @@ import Product from "../views/Product.vue";
 import ShoppingCart from "../views/ShoppingCart.vue";
 import SuccessPage from "../views/Success.vue";
 import ProductSearch from "../views/ProductSearch.vue";
+import Login from "../views/Login.vue";
 
 Vue.use(VueRouter);
 
@@ -41,6 +42,11 @@ const routes = [
         path: "/productsearch",
         name: "ProductSearch",
         component: ProductSearch,
+    },
+    {
+        path: "/login",
+        name: "Login",
+        component: Login,
     },
 ];
 

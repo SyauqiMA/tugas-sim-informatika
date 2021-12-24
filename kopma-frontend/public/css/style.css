@@ -192,6 +192,41 @@ ol {
     cursor: pointer;
 }
 
+.btn-google {
+    display: inline-block;
+    background-color: white;
+    font-size: 16px;
+    border: 1px solid #c1c1c1;
+    padding: 17px;
+    text-transform: none;
+    width: 100%;
+    text-align: center;
+}
+a.btn-google {
+    color: #000;
+}
+
+.btn-google i {
+    font-size: 20px;
+}
+.btn-facebook {
+    display: inline-block;
+    width: 100%;
+    background-color: #4267b2;
+    font-size: 16px;
+    padding: 17px;
+    text-align: center;
+    text-transform: none;
+}
+
+a.btn-facebook {
+    color: white;
+}
+
+.btn-facebook i {
+    font-size: 20px;
+}
+
 /* Preloder */
 
 #preloder {
@@ -3857,8 +3892,27 @@ input[type="number"] {
 .login-form h2 {
     color: #252525;
     font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.register-form .register-separator,
+.login-form .login-separator {
+    margin: 40px 0;
+}
+
+.register-form .register-separator h6,
+.login-form .login-separator h6 {
+    width: 100%;
     text-align: center;
-    margin-bottom: 35px;
+    border-bottom: 1px solid #ccc;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.register-form .register-separator h6 span,
+.login-form .login-separator h6 span {
+    background-color: #fff;
+    padding: 0 10px;
 }
 
 .register-form form .group-input,
@@ -3890,21 +3944,18 @@ input[type="number"] {
     width: 100%;
     letter-spacing: 2px;
     margin-top: 5px;
+    background: #0e8b7d;
 }
 
 .register-form .switch-login,
 .login-form .switch-login {
-    text-align: center;
-    margin-top: 22px;
+    margin-bottom: 35px;
 }
 
 .register-form .switch-login .or-login,
 .login-form .switch-login .or-login {
-    color: #252525;
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    position: relative;
+    font-weight: 700;
+    color: #0e8b7d;
 }
 
 .register-form .switch-login .or-login:before,
@@ -4247,12 +4298,11 @@ input[type="number"] {
         background: #e7ab3c;
         color: #fff;
     }
-    .inner-header .nav-right li.cart-icon .cart-hover {
-        right: -10px;
-    }
+    .inner-header .nav-right li.cart-icon .cart-hover,
     .inner-header .nav-right li.profile-nav .profile-hover {
         right: -10px;
     }
+
     .product-show-option p {
         text-align: left;
     }
