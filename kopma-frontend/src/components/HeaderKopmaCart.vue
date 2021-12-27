@@ -14,7 +14,7 @@
                     <div class="col-lg-7 col-md-7"></div>
                     <div class="col-lg-3 text-right col-md-3">
                         <ul class="nav-right">
-                            <router-link to="/" class="belanja-lagi"> + Tambah Pesanan Lagi </router-link>
+                            <router-link to="/" class="belanja-lagi"> + Tambah Barang Lagi </router-link>
                         </ul>
                     </div>
                 </div>
