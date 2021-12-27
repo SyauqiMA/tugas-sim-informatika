@@ -73,14 +73,18 @@
                                     <li class="w-icon active">
                                         <a href="#"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view"><a href="product.html">+ Quick View</a></li>
+                                    <li class="quick-view">
+                                        <router-link to="/product">+ Quick View</router-link>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="pi-text">
                                 <div class="catagory-name">Mie Instan</div>
-                                <a href="#">
-                                    <h5>Indomie Goreng</h5>
-                                </a>
+                                <router-link to="/product">
+                                    <a href="#">
+                                        <h5>Indomie Goreng</h5>
+                                    </a>
+                                </router-link>
                                 <div class="product-price">
                                     RP 2.300
                                     <span>Rp 2.700</span>
