@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ProductCategory;
+use App\Http\Resources\ProductCategoryResource;
 use Illuminate\Http\Request;
+use App\Models\ProductCategory;
 
 class ProductCategoryController extends Controller
 {
@@ -14,17 +15,7 @@ class ProductCategoryController extends Controller
      */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+        return ProductCategoryResource::collection(ProductCategory::all());
     }
 
     /**
@@ -35,13 +26,15 @@ class ProductCategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if(! $request->user->tokenCan('admin')) {
+            abort(403);
+        }
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\ProductCategory  $productCategory
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show(ProductCategory $productCategory)
@@ -50,36 +43,29 @@ class ProductCategoryController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\ProductCategory  $productCategory
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(ProductCategory $productCategory)
-    {
-        //
-    }
-
-    /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\ProductCategory  $productCategory
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ProductCategory $productCategory)
+    public function update(Request $request, $id)
     {
-        //
+        if(! $request->user->tokenCan('admin')) {
+            abort(403);
+        }
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\ProductCategory  $productCategory
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ProductCategory $productCategory)
+    public function destroy(ProductCategory $productCategory, Request $request)
     {
-        //
+        if(! $request->user->tokenCan('admin')) {
+            abort(403);
+        }
     }
 }
