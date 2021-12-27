@@ -13,24 +13,30 @@ class RegisterLoginController extends Controller
 {
     public function login(Request $request) {
 
-        $validatedData = $request->validate([
+        $validationRules = [
             'username' => 'required',
             'password' => 'required'
-        ]);
+        ];
 
-        if(! Auth::attempt($validatedData)) {
+        $validate = Validator::make($request->all(), $validationRules);
 
+        if($validate->fails()) {
             return response()->json([
-                'status' => 'login failed'
+                $validate->errors()
             ], 400);
         }
 
         $user = User::where('username', $request['username'])->firstOrFail();
 
-        $token = $user->createToken('auth_token')->plainTextToken;
+        if($user->role === 'user') {
+            $token = $user->createToken('user_token', ['user'])->plainTextToken;
+        } 
+        elseif($user->role === 'admin') {
+            $token = $user->createToken('admin_token', ['admin'])->plainTextToken;
+        }
 
         return response()
-            ->json(['message' => 'Hi '.$user->name.', welcome to home', 'access_token' => $token, 'token_type' => 'Bearer', ]);
+            ->json(['message' => 'login nsuccess', 'access_token' => $token, 'token_type' => 'Bearer', ]);
 
     }
 

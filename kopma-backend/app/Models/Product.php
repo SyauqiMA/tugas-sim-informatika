@@ -12,4 +12,16 @@ class Product extends Model
     protected $guarded = [
         'id'
     ];
+
+    protected $with = [
+        'category', 'photos'
+    ];
+
+    public function category() {
+        return $this->belongsTo(ProductCategory::class);
+    }
+
+    public function photos() {
+        return $this->hasMany(ProductGallery::class, 'products_id');
+    }
 }
