@@ -17,6 +17,7 @@
 10.  Footer
 11. My Orders
 12. Detail Pesanan
+13. My Profile
 
 -------------------------------------------------------------------*/
 
@@ -1806,6 +1807,68 @@ a.btn-facebook {
 }
 .my-detail-order .detail-order-table .table-price-summary tbody tr td.detail-order-total {
     font-weight: 700;
+}
+
+/*------------------- My Profile ------------------*/
+
+.my-profile {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.my-profile h6 {
+    font-weight: 700;
+}
+
+.my-profile table.account-information-table {
+    width: 75%;
+}
+.my-profile table.account-information-table tbody tr td {
+    padding: 20px 4px;
+    text-align: left;
+}
+
+.my-profile table.account-information-table tbody tr td:first-child {
+    width: 10%;
+    color: #8f8585;
+}
+
+.my-profile table.account-information-table tbody {
+    margin-bottom: 40px;
+}
+
+.my-profile table.account-information-table tbody tr td:last-child {
+    text-align: left;
+    width: 50%;
+}
+
+.my-profile form label {
+    font-size: 18px;
+    color: #252525;
+    margin-left: 8px;
+    margin-bottom: 0;
+}
+
+.my-profile form input {
+    width: 50%;
+    height: 40px;
+    border: 1px solid #8f8585;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.my-profile form input[type="radio"] {
+    height: 20px;
+    width: 15px;
+}
+
+.my-profile form .save-btn {
+    width: 50%;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    background: #0e8b7d;
+    border: 1px solid #0e8b7d;
+    font-weight: 400;
 }
 
 /*-------------------------------- Other Pages Style -------------------------------*/

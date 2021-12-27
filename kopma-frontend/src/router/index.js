@@ -9,6 +9,7 @@ import Login from "../views/Login.vue";
 import Register from "../views/Register.vue";
 import MyOrders from "../views/MyOrders.vue";
 import DetailPesanan from "../views/DetailPesanan.vue";
+import Profile from "../views/Profile.vue";
 
 Vue.use(VueRouter);
 
@@ -65,6 +66,11 @@ const routes = [
         path: "/detailpesanan",
         name: "DetailPesanan",
         component: DetailPesanan,
+    },
+    {
+        path: "/profile",
+        name: "Profile",
+        component: Profile,
     },
 ];
 
