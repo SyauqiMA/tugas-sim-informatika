@@ -7,6 +7,8 @@ import SuccessPage from "../views/Success.vue";
 import ProductSearch from "../views/ProductSearch.vue";
 import Login from "../views/Login.vue";
 import Register from "../views/Register.vue";
+import MyOrders from "../views/MyOrders.vue";
+import DetailPesanan from "../views/DetailPesanan.vue";
 
 Vue.use(VueRouter);
 
@@ -53,6 +55,16 @@ const routes = [
         path: "/daftar",
         name: "Register",
         component: Register,
+    },
+    {
+        path: "/pesanansaya",
+        name: "PesananSaya",
+        component: MyOrders,
+    },
+    {
+        path: "/detailpesanan",
+        name: "DetailPesanan",
+        component: DetailPesanan,
     },
 ];
 
