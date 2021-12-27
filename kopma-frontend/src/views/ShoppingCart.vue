@@ -17,7 +17,7 @@
         <!-- Breadcrumb Section Begin -->
 
         <!-- Shopping Cart Section Begin -->
-        <section class="shopping-cart spad">
+        <section class="shopping-cart">
             <div class="container">
                 <div class="mt-4 mb-4 text-left">
                     <h4>Keranjang Belanja</h4>
