@@ -23,7 +23,7 @@
                 </div>
                 <div class="row no-gutters">
                     <div class="an-order col-lg-12 mt-3 mb-3 border">
-                        <a href=""
+                        <router-link to="/detailpesanan"
                             ><div class="row no-gutters justify-content-start text-left">
                                 <div class="col-lg-9 col-sm-12 py-4 px-5">
                                     <div class="description-order">
@@ -51,7 +51,7 @@
                                     <i class="icon_clock"></i>
                                     <span>Dalam Pengiriman</span>
                                 </div>
-                            </div></a
+                            </div></router-link
                         >
                     </div>
                     <div class="an-order col-lg-12 mt-3 mb-3 border">

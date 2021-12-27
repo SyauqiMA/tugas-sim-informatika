@@ -1,7 +1,7 @@
 <template>
     <!-- Item Carousel Section Begin -->
     <section class="women-banner spad">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 mt-5 text-left">
                     <h4>Promo Minggu ini</h4>

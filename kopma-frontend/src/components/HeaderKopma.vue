@@ -4,6 +4,7 @@
         <div class="container">
             <div class="inner-header">
                 <div class="row">
+                    <!-- Logo -->
                     <div class="col-lg-2 col-md-2">
                         <div class="logo">
                             <router-link to="/">
@@ -11,6 +12,7 @@
                             </router-link>
                         </div>
                     </div>
+                    <!-- Kategori & Search -->
                     <div class="col-lg-7 col-md-7">
                         <div class="advanced-search">
                             <div class="category-menu">
@@ -47,6 +49,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Cart & account -->
                     <div class="col-lg-3 text-right col-md-3">
                         <ul class="nav-right">
                             <li class="cart-icon">
@@ -105,8 +108,8 @@
                                 </div>
                                 <div class="profile-hover">
                                     <div class="profile-menu">
-                                        <a href="">Profil</a>
-                                        <a href="">Pesanan Saya</a>
+                                        <router-link to="/profile">Profil</router-link>
+                                        <router-link to="/pesanansaya">Pesanan Saya</router-link>
                                     </div>
                                     <div class="select-button">
                                         <a href="" class="primary-btn logout-btn">Log Out</a>
