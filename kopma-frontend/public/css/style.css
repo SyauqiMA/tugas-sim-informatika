@@ -4055,15 +4055,23 @@ input[type="number"] {
     padding-right: 15px;
 }
 
+.register-form form .group-input div {
+    margin-top: 8px;
+}
+
 .register-form form .register-btn,
-.register-form form .login-btn,
-.login-form form .register-btn,
 .login-form form .login-btn {
     width: 100%;
     letter-spacing: 2px;
+    background-color: #0e8b7d;
     margin-top: 5px;
-    background: #0e8b7d;
     border: 1px solid #0e8b7d;
+}
+
+.register-form form .register-btn:disabled,
+.login-form form .login-btn:disabled {
+    background: #96beba;
+    border: 1px solid #96beba;
 }
 
 .register-form .switch-login,

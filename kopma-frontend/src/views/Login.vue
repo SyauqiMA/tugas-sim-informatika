@@ -24,7 +24,7 @@
                                     <div class="login-separator">
                                         <h6><span>or</span></h6>
                                     </div>
-                                    <form action="">
+                                    <form @submit="handleSubmit">
                                         <div class="group-input">
                                             <label for="username">Email</label>
                                             <input type="text" id="username" />

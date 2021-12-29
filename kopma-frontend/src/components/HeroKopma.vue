@@ -12,7 +12,7 @@
                                 Hanya di Minimarket Online KOPMA UIN SUKA <br />
                                 Promo terbatas. Buruan daftar!
                             </p>
-                            <a href="#" class="primary-btn">Login/Register</a>
+                            <router-link to="/login" class="primary-btn">Login/Register</router-link>
                         </div>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5">
-                            <a href="#" class="primary-btn">Login/Register</a>
+                            <router-link to="/login" class="primary-btn">Login/Register</router-link>
                         </div>
                     </div>
                 </div>
