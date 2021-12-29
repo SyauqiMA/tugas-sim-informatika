@@ -19,7 +19,7 @@ class ProductController extends Controller
      */
     public function index(Request $request)
     {
-        return new ProductCollection(Product::paginate(5));
+        return new ProductCollection(Product::paginate(20));
     }
 
 

@@ -1,12 +1,12 @@
 <template>
-    <div class="home">
-        <HeaderKopma />
-        <HeroKopma />
-        <ItemCarousel />
-        <ItemCarousel />
-        <ItemCarousel />
-        <FooterKopma />
-    </div>
+	<div class="home">
+		<HeaderKopma />
+		<HeroKopma />
+		<ItemCarousel />
+		<ItemCarousel />
+		<ItemCarousel />
+		<FooterKopma />
+	</div>
 </template>
 
 <script>
@@ -17,12 +17,12 @@ import ItemCarousel from "@/components/ItemCarousel.vue";
 import FooterKopma from "@/components/FooterKopma.vue";
 
 export default {
-    name: "Home",
-    components: {
-        HeaderKopma,
-        HeroKopma,
-        ItemCarousel,
-        FooterKopma,
-    },
+	name: "Home",
+	components: {
+		HeaderKopma,
+		HeroKopma,
+		ItemCarousel,
+		FooterKopma,
+	},
 };
 </script>
