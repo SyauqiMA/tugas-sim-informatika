@@ -14,7 +14,7 @@ class RegisterLoginController extends Controller
     public function login(Request $request) {
 
         $validationRules = [
-            'username' => 'required',
+            'email' => 'required',
             'password' => 'required'
         ];
 
@@ -26,7 +26,7 @@ class RegisterLoginController extends Controller
             ], 400);
         }
 
-        $user = User::where('username', $request['username'])->firstOrFail();
+        $user = User::where('email', $request['email'])->firstOrFail();
 
         if($user->role === 'user') {
             $token = $user->createToken('user_token', ['user'])->plainTextToken;
@@ -36,21 +36,23 @@ class RegisterLoginController extends Controller
         }
 
         return response()
-            ->json(['message' => 'login nsuccess', 'access_token' => $token, 'token_type' => 'Bearer', ]);
+            ->json(['message' => 'login nsuccess',
+                    'access_token' => $token,
+                    'user' => $user]);
 
     }
 
 
     public function register(Request $request) {
         $validationRules = [
-            'username' => 'required|unique:users|min:4',
+            // 'username' => 'required|unique:users|min:4',
             'name' => 'required|min:6',
             'email' => 'required|unique:users|email',
             'password' => ['required', Password::min(8)->numbers()],
-            'phone' => 'required|unique:users|numeric',
-            'birthday' => ['required', 'date_format:Y-m-d'],
-            'gender' => ['required', Rule::in(['L', 'P'])],
-            'role' => ['required', Rule::in(['admin', 'user'])]
+            // 'phone' => 'required|unique:users|numeric',
+            // 'birthday' => ['required', 'date_format:Y-m-d'],
+            // 'gender' => ['required', Rule::in(['L', 'P'])],
+            // 'role' => ['required', Rule::in(['admin', 'user'])]
 
         ];
 
@@ -64,6 +66,7 @@ class RegisterLoginController extends Controller
 
         $validatedData = $validate->validated();
         $validatedData['password'] = bcrypt($validatedData['password']);
+        $validatedData['role'] = 'user';
 
         $user = User::create($validatedData);
 
@@ -82,10 +85,4 @@ class RegisterLoginController extends Controller
             'message' => 'logout success'
         ]);
     }
-
-    // public function notAuthenticated() {
-    //     return response()->json([
-    //         'message' => 'unauthenticated boiiiiiii'
-    //     ], 401);
-    // }
 }

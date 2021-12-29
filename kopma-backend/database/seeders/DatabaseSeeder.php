@@ -19,10 +19,10 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::factory(10)->create();
         \App\Models\User::create([
             'name' => 'Syauqi M Abrar',
-            'username' => 'syauqiabrar',
-            'birthday' => '2001-08-05',
-            'gender' => 'L',
-            'phone' => '085252225222',
+            // 'username' => 'syauqiabrar',
+            // 'birthday' => '2001-08-05',
+            // 'gender' => 'L',
+            // 'phone' => '085252225222',
             'email' => 'syauqiabrar@gmail.com',
             'role' => 'admin',
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
