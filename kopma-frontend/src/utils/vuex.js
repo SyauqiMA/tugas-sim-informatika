@@ -11,7 +11,8 @@ const store = new Vuex.Store({
     },
     getters: {
         user(state) {
-            return state.user;
+            let user = JSON.parse(state.user);
+            return user;
         },
         loggedIn(state) {
             return state.token !== null;
@@ -48,17 +49,34 @@ const store = new Vuex.Store({
                     })
                     .then((response) => {
                         const token = response.data.access_token;
-                        const user = JSON.stringify(response.data.user);
+                        const user = response.data.user;
+                        console.log(user);
 
                         localStorage.setItem("access_token", token);
-                        localStorage.setItem("user", JSON.parse(user));
+                        localStorage.setItem("user", JSON.stringify(user));
                         context.commit("login", token);
-                        context.commit("user", JSON.parse(user));
+                        context.commit("user", JSON.stringify(user));
                         resolve(response);
                         // console.log(response);
                     })
                     .catch((error) => {
                         console.log(error);
+                        reject(error);
+                    });
+            });
+        },
+        register(context, dataRegister) {
+            return new Promise((resolve, reject) => {
+                axios
+                    .post("/api/auth/register", {
+                        name: dataRegister.name,
+                        email: dataRegister.email,
+                        password: dataRegister.password,
+                    })
+                    .then((response) => {
+                        resolve(response);
+                    })
+                    .catch((error) => {
                         reject(error);
                     });
             });

@@ -75,14 +75,16 @@ export default {
         };
     },
     methods: {
-        async handleSubmit() {
-            await axios.post("/api/auth/register", {
-                name: this.nama,
-                email: this.email,
-                password: this.password,
-            });
-
-            this.$router.push("/login");
+        handleSubmit() {
+            this.$store
+                .dispatch("register", {
+                    name: this.nama,
+                    email: this.email,
+                    password: this.password,
+                })
+                .then((response) => {
+                    this.$router.push("/login");
+                });
         },
         checkPassword() {
             let password = this.password;

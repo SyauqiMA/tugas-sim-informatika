@@ -130,25 +130,19 @@
 
 <script>
 import axios from "axios";
-import { mapState } from "vuex";
+import { mapGetters } from "vuex";
 
 export default {
     name: "HeaderKopma",
     methods: {
         handleClick() {
-            // await axios.post("/api/logout");
-            // localStorage.removeItem("access_token");
-            // localStorage.removeItem("user");
-            // this.$store.dispatch("user", null);
-            // this.$store.dispatch("token", null);
-            // this.$router.push("/");
             this.$store.dispatch("logout").then((response) => {
                 this.$router.push("/");
             });
         },
     },
     computed: {
-        ...mapState(["user"]),
+        ...mapGetters(["user"]),
     },
 };
 </script>

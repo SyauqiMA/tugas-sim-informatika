@@ -63,13 +63,6 @@ export default {
     },
     methods: {
         handleSubmit() {
-            // const response = await axios.post("/api/auth/login", {
-            //     email: this.email,
-            //     password: this.password,
-            // });
-            // localStorage.setItem("token", response.data.access_token);
-            // localStorage.setItem("user", JSON.stringify(response.data.user));
-            // this.$store.dispatch("user", JSON.stringify(response.data.user));
             this.$store
                 .dispatch("login", {
                     email: this.email,

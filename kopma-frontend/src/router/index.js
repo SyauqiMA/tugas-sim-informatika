@@ -36,6 +36,9 @@ const routes = [
         path: "/shoppingcart",
         name: "ShoppingCart",
         component: ShoppingCart,
+        meta: {
+            requiresAuth: true,
+        },
     },
     {
         path: "/success",
@@ -51,26 +54,41 @@ const routes = [
         path: "/login",
         name: "Login",
         component: Login,
+        meta: {
+            requiresVisitor: true,
+        },
     },
     {
         path: "/daftar",
         name: "Register",
         component: Register,
+        meta: {
+            requiresVisitor: true,
+        },
     },
     {
         path: "/pesanansaya",
         name: "PesananSaya",
         component: MyOrders,
+        meta: {
+            requiresAuth: true,
+        },
     },
     {
         path: "/detailpesanan",
         name: "DetailPesanan",
         component: DetailPesanan,
+        meta: {
+            requiresAuth: true,
+        },
     },
     {
         path: "/profile",
         name: "Profile",
         component: Profile,
+        meta: {
+            requiresAuth: true,
+        },
     },
 ];
 
