@@ -36,7 +36,7 @@
                                 <div class="col-lg-3 col-sm-4">
                                     <div class="product-item">
                                         <div class="pi-pic">
-                                            <img src="img/products/hit.jpg" alt="" />
+                                            <img src="img/products/mie.jpg" alt="" />
                                             <div class="sale pp-sale">Promo</div>
                                             <ul>
                                                 <li class="w-icon active">
@@ -46,13 +46,13 @@
                                             </ul>
                                         </div>
                                         <div class="pi-text">
-                                            <div class="catagory-name">Obat Nyamuk</div>
+                                            <div class="catagory-name">Mie Instan</div>
                                             <a href="#">
-                                                <h5>HIT Orange 350ml</h5>
+                                                <h5>Indomie Goreng</h5>
                                             </a>
                                             <div class="product-price">
-                                                Rp 24.000
-                                                <span>Rp 25.500</span>
+                                                Rp 2.300
+                                                <span>Rp 2.500</span>
                                             </div>
                                         </div>
                                     </div>
@@ -60,27 +60,7 @@
                                 <div class="col-lg-3 col-sm-4">
                                     <div class="product-item">
                                         <div class="pi-pic">
-                                            <img src="img/products/minyak.jpg" alt="" />
-                                            <ul>
-                                                <li class="w-icon active">
-                                                    <a href="#"><i class="icon_bag_alt"></i></a>
-                                                </li>
-                                                <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="pi-text">
-                                            <div class="catagory-name">Minyak Goreng</div>
-                                            <a href="#">
-                                                <h5>Filma Minyak Goreng 2L</h5>
-                                            </a>
-                                            <div class="product-price">Rp 27.000</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-4">
-                                    <div class="product-item">
-                                        <div class="pi-pic">
-                                            <img src="img/products/susu.jpg" alt="" />
+                                            <img src="img/produk-serupa-1.jpg" alt="" />
                                             <div class="sale pp-sale">Promo</div>
                                             <ul>
                                                 <li class="w-icon active">
@@ -90,13 +70,13 @@
                                             </ul>
                                         </div>
                                         <div class="pi-text">
-                                            <div class="catagory-name">Susu</div>
+                                            <div class="catagory-name">Mie Instan</div>
                                             <a href="#">
-                                                <h5>Ultra Milk Full Cream 1L</h5>
+                                                <h5>Indomie Seblak Hot Jeletot</h5>
                                             </a>
                                             <div class="product-price">
-                                                Rp 16.000
-                                                <span>Rp 16.500</span>
+                                                Rp 2.700
+                                                <span>Rp 2.900</span>
                                             </div>
                                         </div>
                                     </div>
@@ -104,27 +84,46 @@
                                 <div class="col-lg-3 col-sm-4">
                                     <div class="product-item">
                                         <div class="pi-pic">
-                                            <img src="img/products/mie.jpg" alt="" />
+                                            <img src="img/produk-serupa-2.jpg" alt="" />
+                                            <div class="sale pp-sale">Promo</div>
                                             <ul>
-                                                <router-link to="/product">
-                                                    <li class="w-icon active">
-                                                        <a href="#"><i class="icon_bag_alt"></i></a>
-                                                    </li>
-                                                    <li class="quick-view">
-                                                        <a href="#">+ Quick View</a>
-                                                    </li>
-                                                </router-link>
+                                                <li class="w-icon active">
+                                                    <a href="#"><i class="icon_bag_alt"></i></a>
+                                                </li>
+                                                <li class="quick-view"><a href="#">+ Quick View</a></li>
                                             </ul>
                                         </div>
                                         <div class="pi-text">
                                             <div class="catagory-name">Mie Instan</div>
-                                            <router-link to="/product">
-                                                <a href="#">
-                                                    <h5>Indomie Goreng</h5>
-                                                </a>
-                                            </router-link>
+                                            <a href="#">
+                                                <h5>Indomie Ayam Bawang</h5>
+                                            </a>
                                             <div class="product-price">
-                                                RP 2.300
+                                                Rp 2.500
+                                                <span>Rp 2.900</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-4">
+                                    <div class="product-item">
+                                        <div class="pi-pic">
+                                            <img src="img/produk-serupa-3.jpg" alt="" />
+                                            <div class="sale pp-sale">Promo</div>
+                                            <ul>
+                                                <li class="w-icon active">
+                                                    <a href="#"><i class="icon_bag_alt"></i></a>
+                                                </li>
+                                                <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="pi-text">
+                                            <div class="catagory-name">Mie Instan</div>
+                                            <a href="#">
+                                                <h5>Indomie Mi Goreng Aceh</h5>
+                                            </a>
+                                            <div class="product-price">
+                                                Rp 2.300
                                                 <span>Rp 2.700</span>
                                             </div>
                                         </div>
@@ -133,188 +132,22 @@
                                 <div class="col-lg-3 col-sm-4">
                                     <div class="product-item">
                                         <div class="pi-pic">
-                                            <img src="img/products/hit.jpg" alt="" />
-                                            <ul>
-                                                <li class="w-icon active">
-                                                    <a href="#"><i class="icon_bag_alt"></i></a>
-                                                </li>
-                                                <li class="quick-view"><a href="product.html">+ Quick View</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="pi-text">
-                                            <div class="catagory-name">Obat Nyamuk</div>
-                                            <a href="#">
-                                                <h5>HIT Orange 350ml</h5>
-                                            </a>
-                                            <div class="product-price">
-                                                Rp 24.000
-                                                <span>Rp 25.500</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-4">
-                                    <div class="product-item">
-                                        <div class="pi-pic">
-                                            <img src="img/products/minyak.jpg" alt="" />
+                                            <img src="img/produk-serupa-4.jpg" alt="" />
+                                            <div class="sale pp-sale">Promo</div>
                                             <ul>
                                                 <li class="w-icon active">
                                                     <a href="#"><i class="icon_bag_alt"></i></a>
                                                 </li>
                                                 <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="pi-text">
-                                            <div class="catagory-name">Minyak Goreng</div>
-                                            <a href="#">
-                                                <h5>Filma Minyak Goreng 2L</h5>
-                                            </a>
-                                            <div class="product-price">Rp 27.000</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-4">
-                                    <div class="product-item">
-                                        <div class="pi-pic">
-                                            <img src="img/products/susu.jpg" alt="" />
-                                            <ul>
-                                                <li class="w-icon active">
-                                                    <a href="#"><i class="icon_bag_alt"></i></a>
-                                                </li>
-                                                <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="pi-text">
-                                            <div class="catagory-name">Susu</div>
-                                            <a href="#">
-                                                <h5>Ultra Milk Full Cream 1L</h5>
-                                            </a>
-                                            <div class="product-price">
-                                                Rp 16.000
-                                                <span>Rp 16.500</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-4">
-                                    <div class="product-item">
-                                        <div class="pi-pic">
-                                            <img src="img/products/mie.jpg" alt="" />
-                                            <ul>
-                                                <router-link to="/product">
-                                                    <li class="w-icon active">
-                                                        <a href="#"><i class="icon_bag_alt"></i></a>
-                                                    </li>
-                                                    <li class="quick-view">
-                                                        <a href="#">+ Quick View</a>
-                                                    </li>
-                                                </router-link>
                                             </ul>
                                         </div>
                                         <div class="pi-text">
                                             <div class="catagory-name">Mie Instan</div>
-                                            <router-link to="/product">
-                                                <a href="#">
-                                                    <h5>Indomie Goreng</h5>
-                                                </a>
-                                            </router-link>
-                                            <div class="product-price">
-                                                RP 2.300
-                                                <span>Rp 2.700</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-4">
-                                    <div class="product-item">
-                                        <div class="pi-pic">
-                                            <img src="img/products/hit.jpg" alt="" />
-                                            <ul>
-                                                <li class="w-icon active">
-                                                    <a href="#"><i class="icon_bag_alt"></i></a>
-                                                </li>
-                                                <li class="quick-view"><a href="product.html">+ Quick View</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="pi-text">
-                                            <div class="catagory-name">Obat Nyamuk</div>
                                             <a href="#">
-                                                <h5>HIT Orange 350ml</h5>
+                                                <h5>Indomie Soto Mie</h5>
                                             </a>
                                             <div class="product-price">
-                                                Rp 24.000
-                                                <span>Rp 25.500</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-4">
-                                    <div class="product-item">
-                                        <div class="pi-pic">
-                                            <img src="img/products/minyak.jpg" alt="" />
-                                            <ul>
-                                                <li class="w-icon active">
-                                                    <a href="#"><i class="icon_bag_alt"></i></a>
-                                                </li>
-                                                <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="pi-text">
-                                            <div class="catagory-name">Minyak Goreng</div>
-                                            <a href="#">
-                                                <h5>Filma Minyak Goreng 2L</h5>
-                                            </a>
-                                            <div class="product-price">Rp 27.000</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-4">
-                                    <div class="product-item">
-                                        <div class="pi-pic">
-                                            <img src="img/products/susu.jpg" alt="" />
-                                            <ul>
-                                                <li class="w-icon active">
-                                                    <a href="#"><i class="icon_bag_alt"></i></a>
-                                                </li>
-                                                <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="pi-text">
-                                            <div class="catagory-name">Susu</div>
-                                            <a href="#">
-                                                <h5>Ultra Milk Full Cream 1L</h5>
-                                            </a>
-                                            <div class="product-price">
-                                                Rp 16.000
-                                                <span>Rp 16.500</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-4">
-                                    <div class="product-item">
-                                        <div class="pi-pic">
-                                            <img src="img/products/mie.jpg" alt="" />
-                                            <ul>
-                                                <router-link to="/product">
-                                                    <li class="w-icon active">
-                                                        <a href="#"><i class="icon_bag_alt"></i></a>
-                                                    </li>
-                                                    <li class="quick-view">
-                                                        <a href="#">+ Quick View</a>
-                                                    </li>
-                                                </router-link>
-                                            </ul>
-                                        </div>
-                                        <div class="pi-text">
-                                            <div class="catagory-name">Mie Instan</div>
-                                            <router-link to="/product">
-                                                <a href="#">
-                                                    <h5>Indomie Goreng</h5>
-                                                </a>
-                                            </router-link>
-                                            <div class="product-price">
-                                                RP 2.300
+                                                Rp 2.300
                                                 <span>Rp 2.700</span>
                                             </div>
                                         </div>
