@@ -22,5 +22,10 @@ export default {
 		ItemCarousel,
 		FooterKopma,
 	},
+	data() {
+		return {
+			products: [],
+		};
+	},
 };
 </script>
