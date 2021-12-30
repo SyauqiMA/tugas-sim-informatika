@@ -42,8 +42,8 @@
                                 </div>
                             </div>
                             <div class="input-group">
-                                <input type="text" placeholder="Beli apa hari ini?" />
-                                <button type="button" id="searchBtn" aria-label="Cari" title="Cari Produk">
+                                <input type="text" placeholder="Beli apa hari ini?" v-model="search" required />
+                                <button type="button" id="searchBtn" aria-label="Cari" title="Cari Produk" @click="searchProduct">
                                     <i class="ti-search"></i>
                                 </button>
                             </div>
@@ -134,11 +134,19 @@ import { mapGetters } from "vuex";
 
 export default {
     name: "HeaderKopma",
+    data() {
+        return {
+            search: "",
+        };
+    },
     methods: {
         handleClick() {
             this.$store.dispatch("logout").then((response) => {
                 this.$router.push("/");
             });
+        },
+        searchProduct() {
+            this.$router.push("/productsearch/" + this.search);
         },
     },
     computed: {

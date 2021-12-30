@@ -46,7 +46,8 @@ const routes = [
         component: SuccessPage,
     },
     {
-        path: "/productsearch",
+        path: "/productsearch/:product",
+        props: true,
         name: "ProductSearch",
         component: ProductSearch,
     },

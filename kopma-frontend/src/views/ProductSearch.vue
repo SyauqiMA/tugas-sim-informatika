@@ -22,7 +22,9 @@
                         <div class="title-search mt-4 mb-4">
                             <div class="row">
                                 <div class="text-left col-lg-6 col-sm-12">
-                                    <h4>Hasil Pencarian | <span>Daily Stuff</span></h4>
+                                    <h4>
+                                        Hasil Pencarian | <span>{{ keyword }}</span>
+                                    </h4>
                                 </div>
                                 <div class="text-right col-lg-6 col-sm-12">
                                     <h6>12 Produk ditemukan</h6>
@@ -337,6 +339,11 @@ export default {
     components: {
         HeaderKopma,
         FooterKopma,
+    },
+    data() {
+        return {
+            keyword: this.$route.params.product,
+        };
     },
 };
 </script>
