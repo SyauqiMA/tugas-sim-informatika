@@ -3,8 +3,6 @@
 		<HeaderKopma />
 		<HeroKopma />
 		<ItemCarousel />
-		<ItemCarousel />
-		<ItemCarousel />
 		<FooterKopma />
 	</div>
 </template>

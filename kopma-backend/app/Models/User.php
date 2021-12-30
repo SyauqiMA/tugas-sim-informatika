@@ -48,4 +48,8 @@ class User extends Authenticatable
     public function shopping_cart_items() {
         return $this->hasMany(ShoppingCart::class);
     }
+
+    public function shipping_info() {
+        return $this->hasOne(ShoppingCart::class);
+    }
 }

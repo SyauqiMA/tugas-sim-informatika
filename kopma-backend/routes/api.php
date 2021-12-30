@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProductCategoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\RegisterLoginController;
+use App\Http\Controllers\ShippingInfoController;
 use App\Http\Controllers\ShoppingCartController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -24,14 +25,21 @@ Route::middleware('auth:sanctum')->group(function() {
     });
     Route::post('/logout', [RegisterLoginController::class, 'logout']);
 
-    // APIs
+    // APIs with token
     Route::apiResources([
-        '/products' => ProductController::class,
-        '/categories' => ProductCategoryController::class,
         '/cart-items' => ShoppingCartController::class,
     ]);
+
+    Route::apiResource('/shipping-info', ShippingInfoController::class)->except('show');
 });
 
+
+// APIS without token
+Route::apiResource('/categories', ProductCategoryController::class);
+Route::apiResource('/products', ProductController::class);
+
+
+// authentication APIs
 Route::prefix('auth')->group(function() {
     Route::post('/login', [RegisterLoginController::class, 'login'])->name('login');
     Route::post('/register', [RegisterLoginController::class, 'register']);

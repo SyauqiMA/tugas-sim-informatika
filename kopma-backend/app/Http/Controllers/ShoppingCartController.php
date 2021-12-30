@@ -83,7 +83,14 @@ class ShoppingCartController extends Controller
      */
     public function update(Request $request, ShoppingCart $shoppingCart)
     {
-        //
+        $data = [
+            'quantity' => $request['quantity'],
+        ];
+
+        // update data
+        ShoppingCart::where('id', $shoppingCart->id)->update($data);
+
+
     }
 
     /**
@@ -94,7 +101,7 @@ class ShoppingCartController extends Controller
      */
     public function destroy(ShoppingCart $shoppingCart)
     {
-        //
+        ShoppingCart::destroy($shoppingCart->id);
     }
 
     /**
@@ -103,6 +110,8 @@ class ShoppingCartController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function emptyCart(Request $request) {
+        // TODO : add cart items to TransactionDetail here...
 
+        ShoppingCart::where('user_id', $request->user()->id)->delete();
     }
 }

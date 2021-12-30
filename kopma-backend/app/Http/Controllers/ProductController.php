@@ -19,7 +19,7 @@ class ProductController extends Controller
      */
     public function index(Request $request)
     {
-        return new ProductCollection(Product::paginate(20));
+        return new ProductCollection(Product::paginate(5));
     }
 
 
@@ -72,7 +72,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        return new ProductResource($product);
+        return new ProductResource(Product::findOrFail($product->id));
     }
 
 
