@@ -166,7 +166,6 @@
 <script>
 import HeaderKopma from "@/components/HeaderKopma.vue";
 import FooterKopma from "@/components/FooterKopma.vue";
-
 export default {
     name: "ProductSearch",
     components: {

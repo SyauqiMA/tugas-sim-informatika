@@ -1,10 +1,10 @@
 <template>
-    <div class="home">
-        <HeaderKopma />
-        <HeroKopma />
-        <ItemCarousel />
-        <FooterKopma />
-    </div>
+	<div class="home">
+		<HeaderKopma />
+		<HeroKopma />
+		<ItemCarousel />
+		<FooterKopma />
+	</div>
 </template>
 
 <script>
@@ -15,17 +15,17 @@ import ItemCarousel from "@/components/ItemCarousel.vue";
 import FooterKopma from "@/components/FooterKopma.vue";
 
 export default {
-    name: "Home",
-    components: {
-        HeaderKopma,
-        HeroKopma,
-        ItemCarousel,
-        FooterKopma,
-    },
-    data() {
-        return {
-            products: [],
-        };
-    },
+	name: "Home",
+	components: {
+		HeaderKopma,
+		HeroKopma,
+		ItemCarousel,
+		FooterKopma,
+	},
+	data() {
+		return {
+			products: [],
+		};
+	},
 };
 </script>
